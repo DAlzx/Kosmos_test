@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Test Kosmos</title>
+</head>
+<body>
+    <div id="body">
+    <nav id="navBar">
+        <div id="boxLogo"><div id="logo"></div></div>
+        <div class="burgerMenu">
+            <button class="buttonMenu">
+                <div class="containerLignes">
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                </div>
+                
+            </button>
+            <div id="textMenu"><span>Menu</span></div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="menu n1" id="menu1">
+            <div class="swipeUp" id="SUP1">
+                <button class="ButtonSwipeUp" id="BS1">
+                    <div class="boxLigne">
+                        <div class="ligneButton"></div>
+                        <div class="ligneButton"></div>
+                    </div>
+                    
+                </button>
+                <div class="rectangle"></div>
+            </div>
+            <div id="paragraph">
+                <div class="text">
+                    <p>CHANGER DE MÉTIER<br>GRÂCE AU CPF<br> DE TRANSITION<br> PROFESSIONNELLE</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="menu n2" id="menu2">
+            <div class="swipeUp" id="SUP2">
+                <button class="ButtonSwipeUp" id="BS2" onClick="GetIdMenu('containerMenu2', '.ligneButton.n1', '.ligneButton.n2')">
+                    <div class="boxLigne">
+                        <div class="ligneButton n1"></div>
+                        <div class="ligneButton n2"></div>
+                    </div>
+                </button>
+                <div class="rectangle"></div>
+            </div>
+            <div id="paragraph">
+                <div class="text n1">
+                    <p>QU'EST-CE QUE<br>LE CPF DE TRANSITION<br> PROFESSIONNELLE ?</p>
+                </div>
+            </div>
+        </div>
+        <div id="containerMenu2">
+            <div id="section1">
+                <div class="textCPF1">
+                  
+                    <p id="textCPFp1">
+                        <span>Le CPF de transition professionnelle </span>
+                        est un nouveau dispositif qui remplace 
+                        le Congé individuel de formation 
+                        depuis le 1er janvier 2019.
+                    </p>
+                    
+                    <p id="textCPFp2">
+                        <span>Le CPF de transition professionnelle</span>
+                        
+                        permet à tout salarié de suivre, à son 
+                        initiative et à titre individuel, une formation 
+                        longue et certifiante en vue de<span> changer 
+                        de métier ou de profession.</span>
+                        </span>
+                    
+                    <p id="textCPFp3">
+                        <span>QUI PEUT EN BÉNÉFICIER ?</span>
+                    </p>
+                </div>
+                <div id="divImgCPF"><div id="ImgCPF"></div></div>
+                
+                
+            </div>
+            <div id="section2">
+                <div class="textCPF2">
+                    <p>
+                        <span>• Tout salarié en CDI</span> 
+                        justifiant d’une ancienneté 
+                        de 24 mois (consécutifs ou 
+                        non) dont 12 mois dans 
+                        la même entreprise (quelle 
+                        que soit la nature des 
+                        contrats successifs)
+                    </p>  
+                      
+                </div>
+                <div class="textCPF2">
+                    <p >
+                        <span>• Tout salarié en CDD ou ex-CDD</span> justifiant d’une 
+                        ancienneté de 24 mois (consécutifs ou non) au 
+                        cours des 5 dernières années, dont 4 mois en CDD 
+                        (consécutifs ou non) au cours des 12 derniers mois.
+                        Le salarié en CDD devra être toujours en poste 
+                        lorsqu'il déposera son dossier de demande de
+                        financement et sa formation devra débuter au 
+                        maximum 6 mois après la fin de son contrat.
+                    </p>   
+                </div>
+            </div>
+            <div id="titleCPF">
+                <p><span>LE CPF DE TRANSITION 
+                PROFESSIONNELLE, C'EST QUOI ?</span></p>
+            </div>
+            <div id="video">
+                <iframe width="60%" height="90%" src="https://www.youtube.com/embed/sZJp2uNelMA" title="YouTube video player" frameborder allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="divFinance">
+                <div id="imgMacon"><img src="/Img/1..png" alt="image maçon"></div>
+                <div id="textFinance">
+                    <p id="p1">LE FINANCEMENT</p>
+                    <p id="p2">La mobilisation des droits inscrits au Compte 
+                        Personnel de Formation (CPF) permet de 
+                        contribuer au financement de la formation.
+                        Les frais pédagogiques et les frais liés à 
+                        la formation sont assurés par le Fongecif.
+                        Pendant la formation, la rémunération du 
+                        salarié est en partie maintenue.</p>
+                        <div id="divESP"><button id="buttonESP">EN SAVOIR PLUS</button></div>
+                
+                </div>
+                
+            </div>
+            
+
+        </div>
+        
+        <div class="menu n3" id="menu3">
+            <div class="swipeUp" id="SUP3">
+                <button class="ButtonSwipeUp" id="BS3" onClick="GetIdMenu('containerMenu3', '.ligneButton.q1', '.ligneButton.q2')">
+                    <div class="boxLigne">
+                        <div class="ligneButton q1"></div>
+                        <div class="ligneButton q2"></div>
+                    </div>
+                </button>
+                <div class="rectangle"></div>
+            </div>
+            <div id="paragraph">
+                <div class="text n1">
+                    <p>COMMENT RÉALISER<br>VOTRE PROJET DE<br>RECONVERTION ?</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="containerMenu3">
+            <div id="TitleOrange">
+                <div class="textOrange1">
+                    <p>
+                        LE FONGECIF ÎLE-DE-FRANCE<br> VOUS ACCOMPAGNE DANS VOTRE PROJET</p>
+                        <p>
+                            Les conseillers du Fongecif Île-de-France vous
+                            accompagnent dans la réflexion et la mise en œuvre
+                            de votre projet de reconversion professionnelle.</p>
+                    </p>
+                </div>
+            </div>
+                <div id="OrangeWhite">
+                    <div class="containerOrange ">
+                        <div class="case1">
+                            <p>1<br>NOUS VOUS CONTACTONS<img src="/Img/picto1.png"></p>
+                            
+                        </div>
+                        <div class="case2">
+                            <p>Nous prenons contact avec vous par téléphone 
+                                pour faire le point sur votre situation professionnelle 
+                                ou de votre projet de reconversion.</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="containerWhite">
+                        <div class="case1">
+                            <p>2<br>JE RENCONTRE MON CONSEILLER<img src="/Img/picto2.png"></p>
+                            
+                        </div>
+                        <div class="case2">
+                            <p>Un de nos conseillers vous accueille pour vous 
+                                accompagner dans votre réflexion et vos démarches 
+                                administratives et financières. Il vous aide dans la 
+                                construction de votre projet de reconversion dans le 
+                                cadre d'un suivi personnalisé jusqu'à sa mise en œuvre.</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="containerOrange n2">
+                        <div class="case1">
+                            <p>3<br>NOUS ÉLABORONS UN PLAN D'ACTIONS<img src="/Img/picto3.png"></p>
+                            
+                        </div>
+                        <div class="case2">
+                            <p>Votre projet est cohérent et solide ?
+                                Nous élaborons à vos côtés un plan d’actions et vous 
+                                aidons à le mettre en œuvre : identification de 
+                                l’organisme de formation et des modes de financement…</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="containerWhite n2">
+                        <div class="case1">
+                            <p>4<br>VOTRE PROJET EST FORMALISÉ<img src="/Img/picto.png"></p>
+                            
+                        </div>
+                        <div class="case2">
+                            <p>Un document récapitulant la description de votre projet 
+                                professionnel vous est remis à chaque étape. 
+                                Vous êtes prêt à vous lancer !</p>
+                        </div>
+                            
+                        </div>
+                        <div class="DivOrangeButton">
+                            <div class="OrangeESP"><button class="buttonOrangeESP">EN SAVOIR PLUS</button></div>
+                        </div>
+                </div>
+                
+
+            </div>
+        
+        <div class="menu n4" id="menu4">
+            <div class="swipeUp" id="SUP4">
+                <button class="ButtonSwipeUp" id="BS4" onClick="GetIdMenu('containerMenu4', '.ligneButton.v1', '.ligneButton.v2')">
+                    <div class="boxLigne">
+                        <div class="ligneButton v1"></div>
+                        <div class="ligneButton v2"></div>
+                    </div>
+                </button>
+                <div class="rectangle"></div>
+            </div>
+            <div id="paragraph">
+                <div class="text n1">
+                    <p>DISCUTER AVEC<br>UN CONSEILLER</p>
+                </div>
+            </div>    
+        </div>
+         <div id="containerMenu4">
+            <div class="PopSubmit">
+                <div class="PopText"></div>
+                
+            </div>
+            <div class="titleForm">
+                <h1>VOUS SOUHAITEZ EN SAVOIR PLUS SUR LE CPF DE TRANSITIONPROFESSIONNELLE OU PRÉPARER VOTRE PROJET DE FORMATION ?<br> 
+                        LAISSEZ-NOUS VOUS CONTACTER.</h1>
+            </div>
+            <div class="containerForms">
+                <form class="divForms">
+
+                    <div class="forms first">
+                        <div class="textForm">
+                            <div class="textForm1"><p>1.</p><p> Avez-vous déjà contacté le Fongecif Île-de-France et/ou avez-vous déjà créé 
+                                votre espace personnel sur www.fongecif-idf.fr ?</p></div>
+                            
+                        </div>
+                        <div>
+                            
+                            <label for="oui" class="labelCheck">Oui<input type="radio" id="oui" value="oui" class="checkbox c1" name="groupe1" checked>
+                            <span class="checkmark"></span></label><br><br>
+                            
+                            
+                            <label for="non" class="labelCheck">Non<input type="radio" id="non" value="non" class="checkbox c2" name="groupe1">
+                            <span class="checkmark"></span></label><br><br>
+                            
+                        </div>
+                    </div>
+                    <div class="forms check">
+                        <div class="textForm">
+                            <p>2. Vous êtes en :</p>
+                        </div>
+                        <div>
+                            
+                            
+                            <label for="cdi" class="labelCheck">CDI<input type="radio" id="cdi" value="cdi" class="checkbox c1" name="groupe2" checked>
+                            <span class="checkmark"></span></label><br><br>
+                            
+                           
+                            <label for="cdd" class="labelCheck">CDD <input type="radio" id="cdd" value="cdd" class="checkbox c2" name="groupe2">
+                            <span class="checkmark"></span></label><br><br>
+        
+                            
+                            <label for="autre" class="labelCheck">Autre<input type="radio" id="autre" value="autre" class="checkbox c2" name="groupe2">
+                            <span class="checkmark"></span></label><br><br>
+                            
+                            </div>
+                    </div>
+                    <div class="forms check">
+                        <div class="textForm">
+                            <p>3. Vous avez un projet de reconversion professionnelle :</p>
+                        </div>
+                        <div>
+                            
+                            
+                            <label for="court" class="labelCheck">À court terme<input type="radio" id="court" value="court" class="checkbox c1" name="groupe3" checked>
+                            <span class="checkmark"></span></label><br><br>
+                            
+                            
+                            <label for="moyen" class="labelCheck">À moyen terme<input type="radio" id="moyen" value="moyen" class="checkbox c2" name="groupe3">
+                            <span class="checkmark"></span></label><br><br>
+        
+                           
+                            <label for="long" class="labelCheck">À long terme <input type="radio" id="long" value="long" class="checkbox c2" name="groupe3">
+                            <span class="checkmark"></span></label><br><br>
+                            
+                        </div>
+                    </div>
+                    <div class="forms check">
+                        <div class="textForm">
+                            <p>4. À quel moment de la journée souhaitez-vous être appelé ?</p>
+                        </div>
+                        <div>
+                            
+                            
+                            <label for="entre9" class="labelCheck">Entre 9h et 12h<input type="radio" id="entre9" value="entre9" class="checkbox input1" name="groupe4" checked>
+                            <span class="checkmark"></span></label><br><br>
+                            
+                           
+                            <label for="entre12" class="labelCheck">Entre 12h et 14h <input type="radio" id="entre12" value="entre12" class="checkbox c2" name="groupe4">
+                            <span class="checkmark"></span></label><br><br>
+        
+                          
+                            <label for="entre14" class="labelCheck">Entre 14h et 16h  <input type="radio" id="entre14" value="entre14" class="checkbox c1" name="groupe4">
+                            <span class="checkmark"></span></label><br><br>
+                            
+                            
+                            <label for="entre16" class="labelCheck">Entre 16h et 18h
+                                <input type="radio" id="entre16" value="entre16" class="checkbox c2" name="groupe4">
+                                <span class="checkmark"></span>
+                            </label><br><br>
+                            
+                        </div>
+                    </div>
+                    <div class="forms BLast">
+                        <div class="textForm">
+                            <p>5. Vos informations</p>
+                        </div>
+                        <div>
+                            <p for="nom">Nom</p>
+                            <input type="text" name="nom" class="input1" autocomplete="family-name" required><br><br>
+        
+                            <p for="prenom">Prénom</p>
+                            <input type="text" name="prenom" class="input1" autocomplete="cc-given-name" required><br><br>
+        
+                            <p for="tel">Numéro de téléphone</p>
+                            <input type="tel" name="tel" class="input1" maxlength="10" minlength="10" autocomplete="tel" required><br><br>
+        
+                            <p for="mail">Adresse email</p>
+                            <input type="email" name="mail" class="input1" autocomplete="email" required ><br><br>
+        
+                        </div>
+                    </div>
+                    <div class="forms last">
+                        <div class="textForm underL">
+                            <p>Que faites-vous de mes données ?</p>
+                        </div>
+                        <div class="form5">
+                            <label class="labelCheck">En soumettant ce formulaire, j’accepte que les informations
+                                saisies soient exploitées dans le cadre de la demande.
+                                <input type="checkbox" name="data" class="checkbox c1">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div class="DivSubmit">
+                        <input type="submit" name="data" class="submit" value="ENVOYER" >
+                     </div>
+                
+                </form>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="DivFooter">
+            <div id="boxLogoFooter"><div id="logoFooter"></div></div>
+            <ul id="containerFooter">
+                <li>
+                    <a>Accueil</a>
+                    <a>Contactez-nous</a>
+                    <a>Mentions légales</a>
+                </li>
+            </ul>
+            <div id="containerSocial">
+                <div><img src="/Img/Facebook.png" alt="Facebook"></div>           
+                <div><img src="/Img/Twitter.png" alt="Twitter"></div>
+                <div><img src="/Img/YouTube.png" alt="Youtube"></div>
+                <div><img src="/Img/Linkedin.png" alt="Linkedin"></div>
+                <div><img src="/Img/Instagram.png" alt="Instagram"></div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    </div>
+
+    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

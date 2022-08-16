@@ -1,0 +1,1187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(Img/font/Roboto-Regular.ttf);
+}
+
+#body{
+    height: 431vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all 0.4 ease-in-out;
+}
+#navBar{
+   position: fixed;
+   height: 16%;
+   width: 100%;
+   left: 0;
+    right: 0;
+    top: 0;
+   display: grid;
+   grid-template-columns: 125px 1fr 130px;
+   transition: top 0.3s;
+    transition-delay: 0.2s;
+}
+#navBar.hidden {
+    top: -16%;
+}
+#boxLogo{
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    background-image: url(Img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 120px;
+    float: right;
+}
+.burgerMenu{
+    display: flex;
+    grid-column: 3;
+    margin:  0 5% 0 0;
+}
+.buttonMenu{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    width: 35%;
+    height: 35%;
+}
+.containerLignes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ligne{
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+}
+.buttonMenu .ligne:nth-child(1){
+    top: 0%;
+}
+.buttonMenu .ligne:nth-child(2){
+    top: 30%;
+}
+.buttonMenu .ligne:nth-child(3){
+    top: 60%;
+}
+.buttonMenu .ligne:nth-child(4){
+    top: 90%;
+}
+#textMenu{
+    grid-column: 2;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+#textMenu span{
+    margin: auto;
+    color: #f1f1f1;
+    font-family: "Roboto";
+}
+#container{
+    display: flex;
+    height:100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.menu.n1 {
+    background-image: url(/Img/1png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 2vh 0;
+}
+
+#paragraph{
+    color:#f1f1f1;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.text{
+    font-size: 8vh;
+    font-family: "Roboto";
+    margin: auto;
+}
+.text.n1{
+    font-weight: bold;
+}
+.menu.n2 {
+    background-image: url(/Img/2png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 1.5% 0;
+}
+.menu.n3 {
+    background-image: url(/Img/3png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 1.5% 0;
+}
+.menu.n4 {
+    background-image: url(/Img/4png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 1.5% 0;
+}
+#footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: #000;
+}
+.DivFooter{
+    width: 100vw;
+    display: flex;
+    background-color: #000;
+    height: 20vh;
+    justify-content: flex-start;
+    bottom: 0;
+}
+#boxLogoFooter{
+    margin: auto 1%;
+    flex-grow: 1;
+}
+
+#logoFooter{
+    background-image: url(Img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 120px;
+}
+#containerFooter{
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    flex-shrink: 3;
+    width: 100%;
+}
+#containerFooter li{
+    margin: auto;
+    display: flex;
+    height: 50%;
+    width: 70%;
+    text-align: center;
+}
+#containerFooter li a:nth-child(2){
+    width: 120px;
+}
+#containerFooter li a:nth-child(3){
+    width: 135px;
+}
+#containerFooter li a{
+    color: #f1f1f1;
+    cursor: pointer;
+    margin: auto ;
+    font-family: "Roboto";
+}
+#containerSocial{
+    display: inline-flex;
+    margin: auto;
+    flex-grow: 1;
+    width: 25vw;
+}
+#containerSocial div{
+    height: 50px;
+    width: 50px;
+}
+#containerSocial div img{
+    width: 60%;
+    height:60%;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    object-position: center;
+}
+.swipeUp{
+    width: 100%;
+    height: 9%;
+    flex-direction: column;
+    display: flex;
+}
+#SUP1{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+#SUP2{
+    position: relative;
+    top: 91vh;
+    transition: 0.3s;
+    opacity: 0;
+}
+#SUP3{
+    position: relative;
+    top: 91vh;
+    transition: 0.3s;
+    opacity: 0;
+}
+#SUP4{
+    position: relative;
+    top: 91vh;
+    transition: 0.3s;
+    opacity: 0;
+}
+.ButtonSwipeUp{
+   margin: auto;
+   background-color: gray;
+   border: none;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   height: 70%;
+   width: 150px;
+   opacity: 0.7;
+   display: flex;
+   flex-direction: row;
+   cursor: pointer;
+   position: relative;
+}
+.boxLigne{
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    pointer-events: none;
+}
+.ligneButton{
+    width: 100%;
+    height: 1.5px;
+    background-color: #f1f1f1;
+    transition: transform 0.4s ease-in-out;
+}
+.ButtonSwipeUp .ligneButton:nth-child(1){
+    margin: 2.5vh 0 0 12px;
+    grid-column: 1;
+    transform: rotate(45deg);
+}
+.ButtonSwipeUp .ligneButton:nth-child(2){
+    top: 25%;
+    margin: 2.5vh 12px 0 0;
+    grid-column: 2;
+    transform: rotate(-45deg);
+}
+
+#containerMenu2.active .ligneButton:nth-child(1){
+    transform: rotate(0deg);
+}
+.b2.active .ligneButton:nth-child(1){
+    transform: rotate(0deg);
+}
+
+.rectangle{
+    width: 100%;
+    height:30%;
+    background-color: gray;
+    
+    opacity: 0.7;
+    cursor: pointer;
+}
+.menu.n1:hover #SUP1 {
+    opacity: 1;
+}
+#SUP1:hover{
+    opacity: 1;
+}
+.menu.n2:hover #SUP2 {
+    opacity: 1;
+}
+#SUP2:hover{
+    opacity: 1;
+}
+.menu.n3:hover #SUP3 {
+    opacity: 1;
+}
+#SUP3:hover{
+    opacity: 1;
+}
+.menu.n4:hover #SUP4 {
+    opacity: 1;
+}
+#SUP4:hover{
+    opacity: 1;
+}
+/*containeur rose*/
+#containerMenu2{
+    width: 100vw;
+    height: 0vh;
+    display: block;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.4s;
+}
+#section1{
+    display: flex;
+    flex-direction: row;
+}
+.textCPF1{
+    width: 95%;
+    height: 100%;
+    margin: 0 0 0 5%;
+}
+.textCPF1 p{
+    font-family: "Roboto";
+    font-size: 35px;
+}
+.textCPF1 p:nth-child(1){
+    font-weight: bold;
+    margin: 0 0 9% 0;
+}
+.textCPF1 p:nth-child(2){
+    margin: 0 0 14% 0;
+}
+.textCPF1 p:nth-child(3){
+    font-weight: bold;
+}
+.textCPF1 p span{
+    color: palevioletred;
+}
+#divImgCPF{
+    height: 55vh;
+    width: 70vw;
+    
+}
+#ImgCPF{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Img/femme.png);
+    background-size: cover;
+    margin: 0 0 0 5%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section2{
+    display: grid;
+    grid-template-columns: 5% 30% 60% 5%;
+   
+}
+.textCPF2{
+    width: 95%;
+    height: 100%;
+    margin: 0 0 0 5%;
+}
+#section2 div:nth-child(1){
+    grid-column: 2;
+}
+#section2 div:nth-child(2){
+    grid-column: 3;
+}
+.textCPF2 p{
+    font-family: "Roboto";
+    font-size: 35px;
+}
+.textCPF2 p span{
+    color: palevioletred;
+}
+#titleCPF{
+    margin: 5% 0 0 6%;
+    width: 60%;
+    grid-column: 2;
+}
+#titleCPF p{
+    font-family: "Roboto";
+    font-size: 35px;
+    color: palevioletred;
+    font-weight: bold;
+}
+#video{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin: 2% 0 0 0;
+}
+#video iframe{
+    margin: auto;
+}
+#divFinance{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-gap: 5%;
+    margin: 5% 0 0 0;
+}
+#imgMacon img{
+    width: 100% ;
+    height: 70%;
+}
+#textFinance{
+    font-size: 35px;
+    font-family: "Roboto";
+}
+#p1{
+    color: palevioletred;
+    font-weight: bold;
+    margin: 0 0 3% 0;
+}
+#divESP{
+    width: 200px;
+    height: 45px;
+    margin: 3% 0 0 0;
+    display: flex;
+    float: right;
+}
+#buttonESP{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: palevioletred;
+    color: #f1f1f1;
+    transition: 0.3s;
+    border: none;
+}
+#buttonESP:hover{
+    background-color: rgb(227, 67, 120);
+}
+#containerMenu3{
+    width: 100vw;
+    height: 0vh;
+    display: block;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.4s;
+}
+#TitleOrange{
+    width: 70%;
+    height: 40vh;
+    margin: 0 0 5vh 0;
+    
+}
+.textOrange1{
+    font-family: "Roboto";
+    margin: 0 0 0 5%;
+}
+.textOrange1 p:nth-child(1){
+    color: orangered;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.textOrange1 p:nth-child(2){
+    font-size: 30px;
+}
+#OrangeWhite{
+    display: grid;
+    grid-template-rows: repeat(4 ,55vh);
+}
+.containerOrange{
+    width: 100%;
+    grid-row: 1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    color: #f1f1f1;
+    font-family: "Roboto";
+    text-align: center;
+}
+.containerOrange.n2{
+    grid-row: 3;
+}
+.containerOrange.n2 .case1 p{
+    width: 75%;
+}
+.containerOrange .case1{
+    grid-column: 1;
+    background-color: orangered;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+.containerOrange .case1 p{
+    margin: auto;
+    width: 70%;
+    padding: 10vh 0 10vh 0;
+}
+.containerOrange .case1 img{
+    height: 120px;
+    width: 120px;
+}
+.containerOrange .case2{
+    grid-column: 2;
+    background-color: rgb(239, 96, 44);
+    display: flex;
+}
+.containerOrange .case2 p {
+    margin: auto 5%;
+    width: 80%;
+    font-size: 30px;
+}
+.containerOrange .triangle{
+    margin: auto;
+    margin-top: -4vh;
+    height : 0;
+    width : 0;
+    border-bottom : 50px solid orangered;
+    transform: rotate(-45deg);
+    border-right : 50px solid transparent;
+}
+.containerWhite{
+    width: 100%;
+    grid-row: 2;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    font-family: "Roboto";
+}
+.containerWhite.n2{
+    grid-row: 4;
+}
+.containerWhite.n2 .case1 p{
+    width: 60%;
+}
+.containerWhite .case1{
+    grid-column: 1;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    color: orangered;
+}
+.containerWhite .case1 p{
+    margin: auto;
+    width: 70%;
+    padding: 10vh 0 10vh 0;
+    
+}
+.containerWhite .case1 img{
+    height: 120px;
+    width: 120px;
+}
+.containerWhite .case2{
+    grid-column: 2;
+    background-color: white;
+    display: flex;
+    color: #000;
+}
+.containerWhite .case2 p {
+    margin: auto 5%;
+    width: 80%;
+    font-size: 30px;
+}
+.containerWhite .triangle{
+    margin: auto;
+    margin-top: -4vh;
+    height : 0;
+    width : 0;
+    border-bottom : 50px solid whitesmoke;
+    transform: rotate(-45deg);
+    border-right : 50px solid transparent;
+}
+#OrangeWhite .DivOrangeButton{
+    width: 100%;
+    height: 10vh;
+}
+.OrangeESP{
+    width: 200px;
+    height: 45px;
+    margin: 0 5% 0 0;
+    display: flex;
+    float: right;
+}
+.buttonOrangeESP{
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: orangered;
+    color: #f1f1f1;
+    transition: 0.3s;
+    border: none;
+}
+.buttonOrangeESP:hover{
+    background-color: rgb(239, 96, 44);
+}
+#containerMenu4{
+    width: 100vw;
+    height: 0vh;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.4s;
+}
+.divForms{
+    width: 80%;
+    margin: 0 0 0 10%;
+}
+.titleForm{
+    font-family: "Roboto";
+    width: 80%;
+    height: 22vh;
+    margin: 0 0 0 10% ;
+}
+.forms{
+    font-family: "Roboto";
+    font-size: 20px;
+    width: 100%;
+    margin: 5% 0 0 0;
+}
+.forms.last{
+    margin: 0 0 3% 0;
+}
+.forms div{
+    margin: 0 0 5% 0;
+}
+.forms div label{
+    margin: 0 0 0 1%;
+}
+.form5{
+    display: flex;
+    flex-direction: row;
+    
+}
+.last div{
+    margin: 5% 0 3% 0;
+    width: 60%;
+}
+.BLast{
+    width: 65%;
+}
+.first{
+    width: 60%;
+}
+.underL{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 23px;
+    
+}
+.formLabel p{
+    margin: 0 0 0 2%;
+}
+.textForm1{
+    display: flex;
+    flex-direction: row;
+}
+.textForm1 p:nth-child(2){
+    margin: 0 0 0 1%;
+}
+.input1{
+    padding: 5px;
+    border: 2px solid #ffb600;
+    width: 100%;
+}
+.input1:focus{
+    outline: none;
+    border-color: 2px solid #ffb600 ;
+}
+
+.labelCheck{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 22px;
+    width: 100%;
+}
+.labelCheck input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 2px solid #ffb600;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.labelCheck input:checked ~ .checkmark {
+    background-color: #ffb600;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.labelCheck input:checked ~ .checkmark:after {
+    display: block;
+}
+.DivSubmit{
+    width: 100%;
+    height: 8vh;
+}
+.submit{
+    height:100%;
+    width: 170px;
+    background-color: #ffb600;
+    border: none;
+    color: #f1f1f1;
+    font-size: 20px;
+    float: right;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #ffca45;
+}
+.PopSubmit{
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.4s ease-in-out;
+}
+.PopSubmit div{
+    width: 50%;
+    margin: auto;
+    
+}
+.PopSubmit div p {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-align: center;
+}
+@media screen and (max-width: 1200px){
+    #video{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    #divImgCPF{
+        height: 40vh;
+        width: 45vw;
+        grid-column: 2;
+    }
+
+    #section1{
+        display: grid;
+        grid-template-columns: 1fr, 45vw;
+    }
+    .textCPF1 p{
+        font-size: 30px;
+    }
+    .textCPF1 p:nth-child(1){
+        margin: 0 0 4% 0;
+        grid-column: 1;
+    }
+    .textCPF1 p:nth-child(2){
+        margin: 0 0 7% 0;
+    }
+    .textCPF2 p{
+        font-size: 30px;
+    }
+    #titleCPF{
+        width: 70%;
+    }
+    #titleCPF p{
+        font-size: 30px;
+    }
+    #video{
+        width: 100%;
+        height: 40vh;
+    }
+    #textFinance{
+        font-size: 30px;
+    }
+    .containerOrange .case1 p{
+        padding: 0;
+        width: 95%;
+    }
+    .containerWhite .case1 p{
+        padding: 0;
+        width: 95%;
+    }
+    .containerWhite.n2{
+        margin-top: -4vh;
+    }
+    .containerOrange.n2{
+        margin-top: -5vh;  
+    }
+    .containerWhite{
+        margin-top: -7vh;
+    }
+    .containerWhite.n2 .case1 p{
+        padding-top: 5vh;
+        margin: 0vh 0 0 10%;
+    }
+    .containerWhite p{
+        padding-top: 10vh;
+    }
+    .containerWhite .case2 p{
+        padding:5vh 0 0 0;
+        width: 95%;
+
+    }
+    .containerWhite .case1 p{
+        padding:5vh 0 0 0;
+
+    }
+    .containerOrange.n2 p{
+        padding-top: 5vh;
+        width: 95%;
+        
+    }
+    .containerOrange.n2 .case2 p{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 800px){
+    #TitleOrange{
+        width: 90%;
+        margin: 0 0 0vh 0;
+        height: 35vh;
+    }
+    #imgMacon{
+        display: none;
+    }
+    #section1 div:nth-child(2){
+        display: none;
+    }
+    #divFinance{
+        display: flex;
+        margin: 5% 5% 0 5%;
+    }
+    .textOrange1 p:nth-child(1){
+        font-size: 40px;
+    }
+    .textOrange1 p:nth-child(2){
+        font-size: 25px;
+    }
+    .containerOrange{
+        height: 75%;
+    }
+    .containerOrange .case1{
+        font-size: 25px;
+        
+    }
+    .containerOrange .case1 p{
+        padding: 5vh 0 5vh 0;
+        text-overflow: "-";
+        width: 80%;
+        padding: 5vh 0 5vh 0;
+    }
+    .containerOrange .case2 p {
+        font-size: 23px;
+    }
+    .containerWhite{
+        height: 75%;
+    }
+    .containerWhite .case1{
+        font-size: 25px;
+    }
+    .containerWhite .case1 p{
+        padding: 5vh 0 5vh 0;
+    }
+    .containerWhite .case2 p {
+        font-size: 23px;
+    }
+    #OrangeWhite div:nth-child(1){
+        padding: 2.5vh 0 2.5vh 0;
+    }
+    .containerOrange .triangle{
+        margin-top: -4vh;
+    }
+    .containerOrange.n2 .triangle{
+        margin-top: -8vh;
+    }
+    .containerWhite .triangle{
+        margin-top: -8vh;
+    }
+    .text{
+        font-size: 7vh;
+    }
+}
+@media screen and (max-width: 600px){
+    #containerFooter li{
+        flex-direction: column;
+    }
+    #logoFooter{
+        height: 80px;
+        width: 100px;
+    }
+    #containerSocial{
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #containerSocial div{
+        height: 30px;
+        width: 30px;
+    }
+    .titleForm{
+        height: 12vh;
+        font-size: 11px;
+        margin: 0 0 15% 10%;
+    }
+    .last div{
+        margin: 5% 0 3% 0;
+        width: 95%;
+    }
+    .first{
+        width: 95%;
+    }
+    .DivSubmit{
+        margin: 5% 0 0 0;
+        height: 7vh;
+    }
+    #TitleOrange{
+        width: 95%;
+        margin: 0 0 10vh 0;
+        height: 25vh;
+    }
+    .textOrange1 p:nth-child(1){
+        font-size: 30px;
+    }
+    .textOrange1 p:nth-child(2){
+        font-size: 22px;
+    }
+    .containerOrange{
+        height: 75%;
+        grid-template-columns: 35vw 65vw;
+    }
+    .containerOrange .case1{
+        font-size: 25px;
+        
+    }
+    .containerOrange .case1 p{
+        padding: 5vh 0 5vh 0;
+        text-overflow: "-";
+        width: 80%;
+        padding: 5vh 0 5vh 0;
+    }
+    .containerOrange .case2 p {
+        font-size: 23px;
+    }
+    .containerWhite{
+        height: 75%;
+        
+        grid-template-columns: 35vw 65vw;
+    }
+    #section1{
+        grid-template-columns: 1fr;
+        margin: 0 5% 0 5%;
+    }
+    .textCPF1 p{
+        font-size: 25px;
+    }
+    .textCPF1 p:nth-child(1){
+        margin: 0 0 4% 0;
+    }
+    .textCPF1 p:nth-child(2){
+        margin: 0 0 7% 0;
+    }
+    .textCPF1 p:nth-child(3){
+        margin: 0 0 2% 0;
+    }
+    #section2{
+        display: grid;
+        grid-template-columns: 5% 35% 55% 5%;
+       
+    }
+    .textCPF2 p{
+        font-size: 25px;
+    }
+    #titleCPF{
+        width: 70%;
+    }
+    #titleCPF p{
+        font-size: 25px;
+    }
+    #video{
+        height: 35vh;
+    }
+    #textFinance{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width: 435px) {
+    .titleForm{
+        margin: 0 0 23% 10%;
+        font-size: 10px;
+    }
+    .BLast{
+        width: 95%;
+    }
+    .text{
+        font-size: 5vh;
+    }
+}
+@media screen and (max-width: 400px){
+    .text{
+        font-size: 32px;
+    }
+    .titleForm{
+        height: 12vh;
+        font-size: 9px;
+        margin: 0 0 30% 10%;
+    }
+    .last div{
+        margin: 5% 0 3% 0;
+        width: 95%;
+    }
+    .first{
+        width: 95%;
+    }
+    .DivSubmit{
+        margin: 5% 0 0 0;
+        height: 7vh;
+    }
+    .textOrange1 p:nth-child(1){
+        font-size: 30px;
+    }
+    .textOrange1 p:nth-child(2){
+        font-size: 22px;
+    }
+    .containerOrange{
+        display: flex;
+        flex-direction: column;
+    }
+    #OrangeWhite{
+        display: grid;
+        height: 150vh;
+        grid-template-rows: repeat(4 ,50%);
+    }
+    .containerOrange .case1{
+        height: 25%;
+    }
+    .containerOrange .case1 p{
+        width: 90%;
+        height: 100%;
+        padding: 0%;
+    }
+    .containerOrange .case2 p{
+        text-align: center;
+        width: 90%;
+        height: 80%;
+        padding: 0;
+        margin: auto;
+    }
+    .containerOrange .case1 p img{
+        height: 100px;
+        width: 100px;
+    }
+    .containerOrange .case2{
+        height: 75%;
+    }
+    .containerOrange .triangle{
+        margin-top: -17vh;
+        border-bottom : 50px solid rgb(239, 96, 44);
+    }
+    .containerOrange.n2{
+        margin-top:-32vh ;
+    }
+    .containerOrange.n2{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerOrange.n2 .case2{
+        padding: 0%;
+        height: 40%;
+    }
+    .containerOrange.n2 .case1{
+        width: 100%;
+        padding: 0%;
+        height: 25%;
+    }
+    .containerOrange.n2 .case1 p{
+        height: 100%;
+        display: flex;
+        padding:5% 0 0 0 ;
+        flex-direction: column;
+    }
+    .containerOrange.n2 .case1 p img{
+        height: 80px;
+        width: 80px;
+        margin: auto;
+    }
+    .containerOrange.n2 .triangle{
+        margin-top: -3.5vh;
+        border-bottom : 50px solid rgb(239, 96, 44);
+    }
+
+    .containerWhite{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        margin-top:-25vh ;
+    }
+    .containerWhite .case1{
+        height: 40%;
+        padding-top: 10vh;
+    }
+    .containerWhite .case1 p{
+        width: 90%;
+        padding: 0%;
+        display: flex;
+        padding-top: 5%;
+        flex-direction: column;
+    }
+    .containerWhite .case1 p img{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+    .containerWhite .case2 p{
+        height: 35vh;
+        padding-top:5vh ;
+        text-align: center;
+    }
+    .containerWhite .triangle{
+        margin-top: -3vh;
+        border-bottom : 50px solid white;
+    }
+    .containerWhite.n2{
+        margin-top: -57vh;
+    }
+    #OrangeWhite .DivOrangeButton{
+        margin-top: -77vh;
+        display: flex;
+    }
+    .OrangeESP{
+        margin: auto;
+        display: flex;
+    }
+}
